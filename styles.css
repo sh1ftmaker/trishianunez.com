@@ -106,7 +106,7 @@ h1, h2, h3, p { margin: 0; }
   margin: 1.1rem 0 1.4rem;
   font-family: var(--display); font-weight: 500;
   font-size: clamp(3.6rem, 11vw, 9.5rem);
-  font-variation-settings: "opsz" 96;
+  font-variation-settings: "opsz" 11; /* low optical size = sturdier hairlines */
   line-height: .86; letter-spacing: -.035em; color: var(--heading);
 }
 .hero__name em { display: block; font-style: italic; font-weight: 400; color: var(--infrared); padding-left: .55em; }
@@ -146,7 +146,7 @@ h1, h2, h3, p { margin: 0; }
 .tag__price {
   margin-top: 1.4rem; text-align: center;
   font: 500 clamp(4rem, 9vw, 5.4rem)/.9 var(--display); letter-spacing: -.04em;
-  font-variation-settings: "opsz" 96;
+  font-variation-settings: "opsz" 11; /* low optical size = sturdier hairlines */
 }
 .tag__cur, .tag__unit { font-size: .45em; vertical-align: .9em; letter-spacing: 0; margin: 0 .04em; }
 .tag__unit { font-style: italic; }
@@ -189,7 +189,7 @@ h1, h2, h3, p { margin: 0; }
 .metric:first-child { padding-left: 0; border-left: 0; }
 .metric__value {
   font: 500 clamp(3rem, 6.4vw, 5.6rem)/.9 var(--display); letter-spacing: -.04em; color: var(--heading);
-  font-variation-settings: "opsz" 96;
+  font-variation-settings: "opsz" 11; /* low optical size = sturdier hairlines */
 }
 .metric__of { font-style: italic; color: var(--ink); font-size: .55em; letter-spacing: 0; }
 .metric__label { max-width: 22ch; color: var(--ink); font-weight: 500; font-size: .98rem; line-height: 1.45; }
@@ -199,7 +199,7 @@ h1, h2, h3, p { margin: 0; }
 .section__head { display: grid; gap: .9rem; margin-bottom: clamp(2rem, 4vw, 3.5rem); }
 .section__title {
   font: 500 clamp(2.2rem, 5vw, 3.9rem)/1 var(--display); letter-spacing: -.025em; color: var(--heading);
-  font-variation-settings: "opsz" 72; max-width: 18ch;
+  font-variation-settings: "opsz" 11; /* low optical size = sturdier hairlines */ max-width: 18ch;
 }
 .section__title em { font-style: italic; color: var(--infrared); }
 .section__lede { max-width: 60ch; color: var(--muted); font-size: 1.08rem; }
@@ -299,7 +299,7 @@ h1, h2, h3, p { margin: 0; }
 }
 .contact__title {
   font: 500 clamp(2.6rem, 7.5vw, 6.2rem)/.95 var(--display); letter-spacing: -.035em; color: var(--heading);
-  font-variation-settings: "opsz" 96; max-width: 14ch;
+  font-variation-settings: "opsz" 11; /* low optical size = sturdier hairlines */ max-width: 14ch;
 }
 .contact__title em { color: var(--ink); }
 .contact__sub { color: var(--ink); font-weight: 500; max-width: 46ch; }
