@@ -50,10 +50,10 @@
       "Aspiring Leaders Award, Nordstrom",
       "Magna Cum Laude, De Anza College"
     ],
-    "knowsAbout": ["Consultative selling", "Clienteling", "Luxury retail", "Team training", "Visual merchandising", "Graphic design", "UX design", "Brand identity", "Website design", "Illustration", "Salesforce", "Adobe Illustrator", "Adobe Photoshop"]
+    "knowsAbout": ["Consultative selling", "Clienteling", "Luxury retail", "Team training", "Visual merchandising", "Graphic design", "UX design", "Brand identity", "Website design", "Illustration", "Salesforce", "Adobe Illustrator", "Adobe Photoshop"],
+    "sameAs": ["https://www.linkedin.com/in/uncleinuyasha", "https://www.instagram.com/uncleinuyasha", "https://www.redbubble.com/people/uncleinuyasha"]
   }
   </script>
-  <!-- When her LinkedIn URL is known, add:  "sameAs": ["https://www.linkedin.com/in/..."]  to the JSON-LD above. -->
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -79,7 +79,8 @@
         <h1 id="hero-name" class="hero__name">Trishia <em>Nunez</em></h1>
         <p class="hero__line">A luxury sales closer with a graphic designer&rsquo;s eye. Most recently: <strong>$1.82M sold in eight months at The&nbsp;RealReal, 152% of quota.</strong></p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="mailto:[PLACEHOLDER-EMAIL]?subject=Hello%20Trishia">Email Trishia</a>
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/uncleinuyasha" rel="me noopener">Connect on LinkedIn</a>
+          <a class="btn btn--ghost" href="#work">See design work</a>
           <a class="btn btn--ghost" href="assets/Trishia_Nunez_Resume.pdf" download hidden>Download résumé</a>
         </div>
       </div>
@@ -181,11 +182,9 @@
     </section>
 
     <!-- ============ DESIGN WORK ============
-         HOW TO ADD REAL WORK:
-         1. Save an image into  assets/portfolio/  using the exact file name shown on each tile
-            (for example  assets/portfolio/brand-identity.jpg ). JPG, about 1600px on the long side.
-         2. That's it. script.js swaps the placeholder for the image automatically.
-         3. Edit the <figcaption> text and the data-alt (image description for screen readers) below.
+         To add a piece: save a web-sized image (WebP or JPG, ~1600px long side) into assets/portfolio/
+         and copy one <figure> below. Add class "piece--art" for line art on a transparent background,
+         which gets a light backing so it reads on the dark page.
     -->
     <section class="section work" id="work" aria-labelledby="work-title">
       <div class="section__head">
@@ -195,31 +194,20 @@
       </div>
 
       <div class="gallery">
-        <figure class="piece piece--wide" data-src="assets/portfolio/brand-identity.jpg" data-alt="[PLACEHOLDER] Describe the brand identity project">
-          <div class="piece__frame"><span class="piece__ph">[PLACEHOLDER]<br>assets/portfolio/<b>brand-identity.jpg</b></span></div>
-          <figcaption><span class="piece__kind">Brand identity</span> [PLACEHOLDER] Project title</figcaption>
+        <figure class="piece piece--art">
+          <div class="piece__frame"><img src="assets/portfolio/robotrish.webp" alt="Black-and-white illustration of a curly-haired character in a cardboard robot costume with a party hat and antenna" width="410" height="473" loading="lazy" decoding="async"></div>
+          <figcaption><span class="piece__kind">Illustration</span> Robotrish</figcaption>
         </figure>
-        <figure class="piece piece--tall" data-src="assets/portfolio/illustration.jpg" data-alt="[PLACEHOLDER] Describe the illustration">
-          <div class="piece__frame"><span class="piece__ph">[PLACEHOLDER]<br>assets/portfolio/<b>illustration.jpg</b></span></div>
-          <figcaption><span class="piece__kind">Illustration</span> [PLACEHOLDER] Project title</figcaption>
+        <figure class="piece piece--art">
+          <div class="piece__frame"><img src="assets/portfolio/personal-mark.webp" alt="Bold black-and-white character mark: a curly-haired face with heavy-lidded eyes and small fangs" width="375" height="286" loading="lazy" decoding="async"></div>
+          <figcaption><span class="piece__kind">Character design</span> Personal mark</figcaption>
         </figure>
-        <figure class="piece" data-src="assets/portfolio/character-design.jpg" data-alt="[PLACEHOLDER] Describe the character design">
-          <div class="piece__frame"><span class="piece__ph">[PLACEHOLDER]<br>assets/portfolio/<b>character-design.jpg</b></span></div>
-          <figcaption><span class="piece__kind">Character design</span> [PLACEHOLDER] Project title</figcaption>
-        </figure>
-        <figure class="piece" data-src="assets/portfolio/animation.jpg" data-alt="[PLACEHOLDER] Describe the animation or storyboard frame">
-          <div class="piece__frame"><span class="piece__ph">[PLACEHOLDER]<br>assets/portfolio/<b>animation.jpg</b></span></div>
-          <figcaption><span class="piece__kind">Animation &amp; storyboard</span> [PLACEHOLDER] Project title</figcaption>
-        </figure>
-        <figure class="piece piece--wide" data-src="assets/portfolio/web-design.jpg" data-alt="[PLACEHOLDER] Describe the website or UX design">
-          <div class="piece__frame"><span class="piece__ph">[PLACEHOLDER]<br>assets/portfolio/<b>web-design.jpg</b></span></div>
-          <figcaption><span class="piece__kind">Web &amp; UX design</span> [PLACEHOLDER] Project title</figcaption>
-        </figure>
-        <figure class="piece" data-src="assets/portfolio/magazine-layout.jpg" data-alt="[PLACEHOLDER] Describe the magazine layout">
-          <div class="piece__frame"><span class="piece__ph">[PLACEHOLDER]<br>assets/portfolio/<b>magazine-layout.jpg</b></span></div>
-          <figcaption><span class="piece__kind">Magazine layout</span> [PLACEHOLDER] Project title</figcaption>
-        </figure>
+        <a class="piece piece--more" href="https://www.redbubble.com/people/uncleinuyasha" rel="me noopener">
+          <span class="piece__frame"><span class="more__body"><span class="eyebrow">Shop &amp; sketchbook</span><span class="more__title">More work on Redbubble and Instagram&nbsp;&rarr;</span></span></span>
+          <span class="more__links"><span>Redbubble</span> &middot; <span>@uncleinuyasha</span></span>
+        </a>
       </div>
+      <p class="work__social"><a href="https://www.instagram.com/uncleinuyasha" rel="me noopener">Instagram @uncleinuyasha</a> &middot; <a href="https://www.redbubble.com/people/uncleinuyasha" rel="me noopener">Redbubble shop</a></p>
     </section>
 
     <!-- ============ AWARDS ============ -->
@@ -239,8 +227,7 @@
     <!-- ============ ABOUT ============ -->
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="about__portrait">
-        <!-- Replace this div with: <img src="assets/headshot.jpg" alt="Portrait of Trishia Nunez" width="800" height="1000"> -->
-        <div class="portrait-ph" role="img" aria-label="Headshot placeholder"><span>[PLACEHOLDER]<br>Headshot<br><small>assets/headshot.jpg</small></span></div>
+        <img src="assets/headshot.jpg" alt="Trishia Nunez in a plaid newsboy cap, round glasses and a light blue shirt, photographed from above" width="800" height="1000" loading="lazy" decoding="async">
       </div>
       <div class="about__copy">
         <p class="eyebrow">About</p>
@@ -263,8 +250,11 @@
       <h2 id="contact-title" class="contact__title">Let&rsquo;s talk about <em>your</em> next hire.</h2>
       <p class="contact__sub">Open to roles in tech sales, luxury retail leadership, and creative and design.</p>
       <div class="contact__actions">
-        <a class="btn btn--light" href="mailto:[PLACEHOLDER-EMAIL]?subject=Hello%20Trishia">[PLACEHOLDER-EMAIL]</a>
-        <a class="btn btn--outline-light" href="[PLACEHOLDER-LINKEDIN-URL]" rel="me noopener">LinkedIn</a>
+        <!-- Unhide and fill in once she chooses a public email address -->
+        <a class="btn btn--light" href="mailto:[PLACEHOLDER-EMAIL]?subject=Hello%20Trishia" hidden>[PLACEHOLDER-EMAIL]</a>
+        <a class="btn btn--light" href="https://www.linkedin.com/in/uncleinuyasha" rel="me noopener">LinkedIn</a>
+        <a class="btn btn--outline-light" href="https://www.instagram.com/uncleinuyasha" rel="me noopener">Instagram</a>
+        <a class="btn btn--outline-light" href="https://www.redbubble.com/people/uncleinuyasha" rel="me noopener">Redbubble</a>
         <a class="btn btn--outline-light" href="assets/Trishia_Nunez_Resume.pdf" download hidden>Download résumé (PDF)</a>
       </div>
     </section>
